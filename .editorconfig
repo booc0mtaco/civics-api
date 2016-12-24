@@ -1,0 +1,15 @@
+# Editor Config
+
+## Don't traverse any higher to find editorconfig
+root = true
+
+# *NIX-style new lines across the board
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# For JS files...
+[*.{js,json}]
+charset = utf-8
+indent_style = space
+indent_size = 2

@@ -17,7 +17,8 @@ senators. Congressional representatives aren't listed under each state, as not a
 districts fall within a single state. For this, we include two other categories: `judiciary` and 
 `congressional`. The former is for the intrastate federal judicial districts (1-9). The latter 
 is for categorizing the congressional districts (in `us`, there are 435 of these, with some crossing 
-state borders).
+state borders). All of these categories can vary by nation, so they are encoded in the `index.json`
+for the country. They can be queried by grabbing the top level data set for the country.
 
 At this point, we should have coverage for elected federal- and state-level government representatives.
 The common key for all of these is ZIP+4 in `us`. This may hold for other countries, but probably
@@ -41,3 +42,12 @@ overlap the intra-state and intra-county districts.
 For each mappable district, there will be a `coords` key that contains all the control points to
 draw the area. For instance if you look up `us/states/tn/data.json`, you can expect to have this key, 
 that can be coverted into lat/long positions on a globe.
+
+## Resources
+
+- [List of Counties in the US][wikicounties]
+- [JSON States][json-states]
+
+
+[wikicounties]: https://en.wikipedia.org/wiki/List_of_United_States_counties_and_county_equivalents
+[json-states]: https://gist.github.com/mshafrir/2646763
